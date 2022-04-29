@@ -37,8 +37,7 @@ function populateList() {
 populateList();
 
 function addTask() {
-    let s = inputElement.value;
-    s = s.trim();
+    let s = inputElement.value.trim();
     if(s && !tasklist.includes(s)) {
         tasklist.push(s);
         populateList();
